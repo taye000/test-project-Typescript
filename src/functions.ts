@@ -57,7 +57,32 @@ printPassengers(...passengersList);
 const newPassport = (person: any) => {
   person.passport = Math.trunc(Math.random() * 1000000);
   console.log(person.passport);
-  
 };
 
 newPassport(mrT);
+
+//Higher order functions are functions that take other functions as parameters or return functions or both
+//The functions that are passed to higher order functions are called "callbacks" or callback functions.
+
+const greet = () => {
+  console.log("Hello");
+};
+//addEventListener takes 2 parameters, the first is the event type, the second is the callback function.
+// addEventListener("click", greet);
+
+
+//function that removes the spaces from a string.
+const oneWord = (str: string) => {
+  console.log(str.replace(/ /g, "").toLowerCase());
+  
+  return str.replace(/ /g, "").toLowerCase();
+};
+//function that returns the 1st word as uppercase and the rest as lowercase.
+const upperFirstWord = (str: string) => {
+  const [first, ...others] = str.split(" ");
+  console.log([first.toUpperCase(), ...others].join(" "));
+  
+  return [first.toUpperCase(), ...others].join(" ");
+};
+oneWord("Hello, World");
+upperFirstWord("Hello World");
