@@ -7,7 +7,8 @@
     "start": "ts-node-dev src/functions.ts",
     "dev": "ts-node-dev src/app.ts",
     "tail": "ts-node-dev src/flutter.ts",
-    "sms": "ts-node-dev src/sms.ts"
+    "sms": "ts-node-dev src/sms.ts",
+    "mpesa": "ts-node-dev src/mpesa.ts"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
   "dependencies": {
     "@celo/contractkit": "^2.0.0",
     "africastalking-ts": "^0.0.3",
+    "daraja": "^1.0.1",
     "dotenv": "^16.0.1",
     "ethers": "^5.6.8",
     "express": "^4.18.1",
