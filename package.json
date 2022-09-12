@@ -8,7 +8,8 @@
     "dev": "ts-node-dev src/app.ts",
     "tail": "ts-node-dev src/flutter.ts",
     "sms": "ts-node-dev src/sms.ts",
-    "mpesa": "ts-node-dev src/mpesa.ts"
+    "mpesa": "ts-node-dev src/mpesa.ts",
+    "tx": "ts-node-dev src/transaction.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,14 +17,15 @@
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/react-dom": "^18.0.6",
+    "ethers": "^5.7.0",
     "typescript": "^4.7.3"
   },
   "dependencies": {
     "@celo/contractkit": "^2.0.0",
     "africastalking-ts": "^0.0.3",
+    "alchemy-sdk": "^2.0.4",
     "daraja": "^1.0.1",
     "dotenv": "^16.0.1",
-    "ethers": "^5.6.8",
     "express": "^4.18.1",
     "flutterwave-node-v3": "^1.0.9",
     "react-dom": "^18.2.0",

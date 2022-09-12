@@ -3,11 +3,13 @@ require("dotenv").config();
 
 // instantiate Mpesa with the organization's shortcode and app's Consumer Key
 // and Consumer Secret
-const mpesa = new Mpesa(
-  process.env.SHORT_CODE,
-  process.env.CONSUMER_KEY,
-  process.env.CONSUMER_SECRET
-);
+const mpesa = new Mpesa({
+  shortCode: process.env.SHORT_CODE,
+  consumerKey: process.env.CONSUMER_KEY,
+  consumerSecret: process.env.CONSUMER_SECRET,
+  securityCredential: process.env.SECURITY_CREDENTIALS,
+  environment: "sandbox"
+});
 console.log("mpesa", mpesa);
 
 
